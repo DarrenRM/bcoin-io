@@ -17,6 +17,7 @@
 	<!-- Web Fonts -->
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400italic,400,600,700' rel='stylesheet'>
 	<link href='https://fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
 	
 	<!-- Bootstrap core CSS -->
 	<link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -55,40 +56,36 @@
 					<div class="container">
 
  						<div class="row">
-							<div class="col-sm-12 text-center">
-								<h1 class="montserrat text-uppercase text-super-xl">bcoin</h1>
-                                <h3><strong>Bcoin is an alternative fullnode implementation written in javascript and optimized for production.</strong><br /></h3>
-							</div>
-						</div>
-
-                        <div class="row">
+							<div class="col-sm-6 text-center">
+                                <img class="module-header" src="assets/images/logo-light-large.png" alt="Bcoin is an alternative fullnode implementation written in javascript and optimized for production." />
+                                <h3 class="module-header monofont"><strong>Bcoin is an alternative fullnode implementation written in javascript and optimized for production.</strong><br /></h3>
+                                
+                                <div class="row">
+                                    <div class="col-sm-12 text-center">
+                                    <a href="#" class="btn btn-base">Learn More</a>
+                                    <a href="#" class="btn btn-gray">Try it Now</a>
+                                    </div>
+                                </div>
+                            
+                            </div>
                             <div class="col-sm-6">
-                                <code>
-                                    var bcoin = require('bcoin');<br /><br />
-
-                                    bcoin.set({<br />
-                                    // Default network (so we can avoid passing<br />
-                                    // the `network` option into every object below.<br />
-                                    network: 'regtest',<br />
-                                    // Enable the global worker pool<br />
-                                    // for mining and transaction verification.<br />
-                                    useWorkers: true<br />
-                                    });<br /><br />
-                                </code>
+                                <div class="terminal-window">
+                                <header>
+                                    <div class="button green"></div>
+                                    <div class="button yellow"></div>
+                                    <div class="button red"></div>
+                                </header>
+                                <section class="terminal">
+                                    <div class="history"></div>
+                                    $&nbsp;<span class="prompt"></span>
+                                    <span class="typed-cursor"></span>
+                                    
+                                </section>
+                                </div>
                             </div>
-                        </div><!--end row-->
-                        
+                        </div> <!-- end of row -->
 
-                        <div class="row">
-                            <div class="col-sm-12 text-center">
-                                <h2>Action is calling. Will you answer?</h2>
-                                <a href="#" class="btn btn-base">Learn More</a>
-                                <a href="#" class="btn btn-gray">Try it Now</a>
-                            </div>
-                        </div>
-
-
-					</div>
+					</div><!-- end of container -->
 
 				</div>
 			</div>
@@ -587,23 +584,15 @@
 		</header>
 		<!-- HEADER STICKY BOTTOM -->
 
-        <!-- FEATURES -->
-		<section class="module">
+		<!-- SERVICES -->
+		<section class="module-sm bg-white-dark">
 			<div class="container">
 
 				<div class="row">
 					<div class="col-sm-6 col-sm-offset-3">
 						<div class="module-header text-center">
-							<h2 class="montserrat text-uppercase">Features</h2>
-							<p class="lead divider-line">We provide a absolute list of superior digital services.</p>
-						</div>
-					</div>
-				</div><!-- .row -->
-
-				<div class="row">
-					<div class="col-sm-10 col-sm-offset-1">
-						<div class="text-center m-t-70 m-b-70">
-							<img src="assets/images/iphone-5.png" alt="">
+							<h2 class="montserrat text-uppercase">Why bcoin?</h2>
+							<p class="lead divider-line">Bcoin is the most advanced, secure and optimized alternative fullnode implementation. It is written in javascript and trusted in production by top bitcoin companies.</p>
 						</div>
 					</div>
 				</div><!-- .row -->
@@ -612,147 +601,39 @@
 
 					<!-- ICONBOX -->
 					<div class="col-sm-4 col-md-4 col-lg-4">
-						<div class="box-icon text-center">
+						<div class="box-icon-left">
 							<div class="icon-box-icon">
 								<i class="icon-fire icons"></i>
 							</div>
-							<h4>Branding</h4>
-							<p>Donec pede justo fringilla vel aliquet nec vulputate eget arcu. In enim justo rhoncus ut imperdiet a venenatis vitae justo.</p>
+							<h4>Optimized</h4>
+							<p>In dui magna, posuere eget, vestibulum et, tempor auctor, justo. In ac felis quis tortor malesuada pretium.</p>
+							<a href="#" class="btn btn-lg btn-link btn-base">Read more ›</a>
 						</div>
 					</div>
 					<!-- END ICONBOX -->
 
 					<!-- ICONBOX -->
 					<div class="col-sm-4 col-md-4 col-lg-4">
-						<div class="box-icon text-center">
+						<div class="box-icon-left">
 							<div class="icon-box-icon">
 								<i class="icon-wrench icons"></i>
 							</div>
-							<h4>Development</h4>
-							<p>Donec pede justo fringilla vel aliquet nec vulputate eget arcu. In enim justo rhoncus ut imperdiet a venenatis vitae justo.</p>
+							<h4>Secure</h4>
+							<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In dui magna posuere.</p>
+							<a href="#" class="btn btn-lg btn-link btn-base">Read more ›</a>
 						</div>
 					</div>
 					<!-- END ICONBOX -->
 
 					<!-- ICONBOX -->
 					<div class="col-sm-4 col-md-4 col-lg-4">
-						<div class="box-icon text-center">
+						<div class="box-icon-left">
 							<div class="icon-box-icon">
 								<i class="icon-earphones-alt icons"></i>
 							</div>
-							<h4>Maintenance</h4>
-							<p>Donec pede justo fringilla vel aliquet nec vulputate eget arcu. In enim justo rhoncus ut imperdiet a venenatis vitae justo.</p>
-						</div>
-					</div>
-					<!-- END ICONBOX -->
-
-				</div><!-- .row -->
-
-			</div>
-		</section>
-		<!-- END FEATURES -->
-
-		<!-- CLIENTS -->
-		<section class="module-xs">
-			<div class="container">
-
-				<div class="row">
-					<div class="col-sm-12">
-
-						<!-- CLIENTS CAROUSEL -->
-						<div class="clients-carousel">
-							<a href="#"><img src="assets/images/clients/client-1.png" alt=""></a>
-							<a href="#"><img src="assets/images/clients/client-2.png" alt=""></a>
-							<a href="#"><img src="assets/images/clients/client-3.png" alt=""></a>
-							<a href="#"><img src="assets/images/clients/client-4.png" alt=""></a>
-							<a href="#"><img src="assets/images/clients/client-5.png" alt=""></a>
-							<a href="#"><img src="assets/images/clients/client-6.png" alt=""></a>
-							<a href="#"><img src="assets/images/clients/client-1.png" alt=""></a>
-							<a href="#"><img src="assets/images/clients/client-2.png" alt=""></a>
-						</div>
-						<!-- END CLIENTS CAROUSEL -->
-
-					</div>
-				</div><!-- .row -->
-
-			</div>
-		</section>
-		<!-- END CLIENTS -->
-
-		<!-- SERVICES -->
-		<section class="module">
-			<div class="container">
-
-				<div class="row multi-columns-row">
-
-					<!-- ICONBOX -->
-					<div class="col-sm-4 col-md-4 col-lg-4">
-						<div class="box-icon-left">
-							<div class="icon-box-icon">
-								<i class="icon-map icons"></i>
-							</div>
-							<h4>Mega Menu</h4>
+							<h4>Advanced</h4>
 							<p>In dui magna, posuere eget, vestibulum et, tempor auctor, justo. In ac felis quis tortor malesuada pretium.</p>
-						</div>
-					</div>
-					<!-- END ICONBOX -->
-
-					<!-- ICONBOX -->
-					<div class="col-sm-4 col-md-4 col-lg-4">
-						<div class="box-icon-left">
-							<div class="icon-box-icon">
-								<i class="icon-rocket icons"></i>
-							</div>
-							<h4>Responsive Design</h4>
-							<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In dui magna posuere.</p>
-						</div>
-					</div>
-					<!-- END ICONBOX -->
-
-					<!-- ICONBOX -->
-					<div class="col-sm-4 col-md-4 col-lg-4">
-						<div class="box-icon-left">
-							<div class="icon-box-icon">
-								<i class="icon-layers icons"></i>
-							</div>
-							<h4>Reusable Elements</h4>
-							<p>In dui magna, posuere eget, vestibulum et, tempor auctor, justo. In ac felis quis tortor malesuada pretium.</p>
-						</div>
-					</div>
-					<!-- END ICONBOX -->
-
-					<!-- ICONBOX -->
-					<div class="col-sm-4 col-md-4 col-lg-4">
-						<div class="box-icon-left">
-							<div class="icon-box-icon">
-								<i class="icon-star icons"></i>
-							</div>
-							<h4>Awesome Parallax</h4>
-							<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In dui magna posuere.</p>
-						</div>
-					</div>
-					<!-- END ICONBOX -->
-
-					<!-- ICONBOX -->
-					<div class="col-sm-4 col-md-4 col-lg-4">
-						<div class="box-icon-left">
-							<div class="icon-box-icon">
-								<i class="icon-cloud-download icons"></i>
-							</div>
-							<h4>Google Web Fonts</h4>
-							<p>In dui magna, posuere eget, vestibulum et, tempor auctor, justo. In ac felis quis tortor malesuada pretium.</p>
-						</div>
-					</div>
-					<!-- END ICONBOX -->
-
-					<!-- ICONBOX -->
-					<div class="col-sm-4 col-md-4 col-lg-4">
-						<div class="box-icon-left">
-							<div class="icon-box-icon">
-								<i class="icon-game-controller icons"></i>
-							</div>
-							<h4>Multiple Colour Schemes</h4>
-							<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In dui magna posuere.</p>
+							<a href="#" class="btn btn-lg btn-link btn-base">Read more ›</a>
 						</div>
 					</div>
 					<!-- END ICONBOX -->
@@ -763,137 +644,223 @@
 		</section>
 		<!-- END SERVICES -->
 
-		<!-- CALLOUT -->
+
+
+		<!-- ABOUT -->
+		<section id="tools" class="module-xs pull-image p-t-140">
+			<div class="col-md-6 col-md-push-6 col-sm-4 col-sm-push-8 text-right p-0">
+				<img src="assets/images/iphone.jpg" alt="">
+			</div>
+
+			<div class="container">
+				<div class="col-md-6 col-md-pull-0 col-sm-6 col-sm-pull-4">
+					<h1 class="text-300 m-t-100">Optimized <br> for production</h1>
+					<p>There have not been any since we have lived here, said my mother. We thought Mr. Copperfield thought it was quite a large rookery but the nests were very old ones and the birds have deserted them a long while.</p>
+
+					<div class="box-icon-left">
+						<div class="icon-box-icon"><i class="icon-map icons"></i></div>
+						<h4>Robust Wallet APIs</h4>
+						<p>Just then her head struck against the roof of the hall in fact she was now more than nine feet high and she at once took up the little golden key and hurried off to the garden door.</p>
+					</div>
+
+					<div class="box-icon-left">
+						<div class="icon-box-icon"><i class="icon-rocket icons"></i></div>
+						<h4>Built-in Accounting</h4>
+						<p>Just then her head struck against the roof of the hall in fact she was now more than nine feet high and she at once took up the little golden key and hurried off to the garden door.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- END ABOUT -->
+
+		<!-- ABOUT -->
+		<section id="engine" class="module-xs pull-image">
+			<div class="col-md-6 col-sm-4 p-0">
+				<img src="assets/images/ipad.jpg" alt="">
+			</div>
+
+			<div class="container">
+				<div class="col-md-6 col-md-offset-2 col-sm-7 col-sm-offset-1 pull-image-right">
+					<h1 class="text-300 m-t-100">Secure, <br> written from scratch</h1>
+					<p>There have not been any since we have lived here, said my mother. We thought Mr. Copperfield thought it was quite a large rookery but the nests were very old ones and the birds have deserted them a long while.</p>
+
+					<div class="box-icon-left">
+						<div class="icon-box-icon"><i class="icon-map icons"></i></div>
+						<h4>Mega Menu</h4>
+						<p>Just then her head struck against the roof of the hall in fact she was now more than nine feet high and she at once took up the little golden key and hurried off to the garden door.</p>
+					</div>
+
+					<div class="box-icon-left">
+						<div class="icon-box-icon"><i class="icon-rocket icons"></i></div>
+						<h4>Responsive Design</h4>
+						<p>Just then her head struck against the roof of the hall in fact she was now more than nine feet high and she at once took up the little golden key and hurried off to the garden door.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- END ABOUT -->
+
+		<!-- ABOUT -->
+		<section id="brands" class="module-xs pull-image p-b-140">
+			<div class="col-md-6 col-md-push-6 col-sm-4 col-sm-push-8 text-right p-0">
+				<img src="assets/images/iwatch.jpg" alt="">
+			</div>
+
+			<div class="container">
+				<div class="col-md-6 col-md-pull-0 col-sm-6 col-sm-pull-4">
+					<h1 class="text-300 m-t-100">The most advanced<br> fullnode implementation.</h1>
+					<p>There have not been any since we have lived here, said my mother. We thought Mr. Copperfield thought it was quite a large rookery but the nests were very old ones and the birds have deserted them a long while.</p>
+
+					<div class="box-icon-left">
+						<div class="icon-box-icon"><i class="icon-map icons"></i></div>
+						<h4>Advanced Address Management</h4>
+						<p>Just then her head struck against the roof of the hall in fact she was now more than nine feet high and she at once took up the little golden key and hurried off to the garden door.</p>
+					</div>
+
+					<div class="box-icon-left">
+						<div class="icon-box-icon"><i class="icon-rocket icons"></i></div>
+						<h4>BIP 150/151</h4>
+						<p>Just then her head struck against the roof of the hall in fact she was now more than nine feet high and she at once took up the little golden key and hurried off to the garden door.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- END ABOUT -->
+
+		<!-- CLIENTS -->
+		<section id="clients" class="module divider-top p-0">
+			<div class="container-fluid">
+
+				<div class="row no-gutter clients-bordered">
+
+					<div class="client col-md-2 col-sm-4 col-xs-6">
+						<a href="#"><img src="assets/images/clients/client-1.png" alt=""></a>
+					</div>
+
+					<div class="client col-md-2 col-sm-4 col-xs-6">
+						<a href="#"><img src="assets/images/clients/client-2.png" alt=""></a>
+					</div>
+
+					<div class="client col-md-2 col-sm-4 col-xs-6">
+						<a href="#"><img src="assets/images/clients/client-3.png" alt=""></a>
+					</div>
+
+					<div class="client col-md-2 col-sm-4 col-xs-6">
+						<a href="#"><img src="assets/images/clients/client-4.png" alt=""></a>
+					</div>
+
+					<div class="client col-md-2 col-sm-4 col-xs-6">
+						<a href="#"><img src="assets/images/clients/client-5.png" alt=""></a>
+					</div>
+
+					<div class="client col-md-2 col-sm-4 col-xs-6">
+						<a href="#"><img src="assets/images/clients/client-6.png" alt=""></a>
+					</div>
+
+				</div><!-- .row -->
+
+			</div>
+		</section>
+		<!-- END CLIENTS -->
+
+
+		<!-- PARALLAX CALLOUT -->
 		<section class="module bg-black-alfa-30 parallax color-white" data-background="assets/images/module-20.jpg">
 			<div class="container">
 
 				<div class="row">
 					<div class="col-sm-12">
 						<div class="text-center">
-							<h2 class="montserrat text-uppercase m-b-30">Are you ready to enjoy? Get this Perfect Theme now!</h2>
-							<a href="#" class="btn btn-circle btn-lg btn-white">View portfolio</a>
+							<h2 class="montserrat text-uppercase m-b-30">Ready to start building? Read the docs!</h2>
+							<a href="#" class="btn btn-circle btn-lg btn-white">Docs</a>
 						</div>
 					</div>
 				</div><!-- .row -->
 
 			</div>
 		</section>
-		<!-- END CALLOUT -->
+		<!-- END PARALLAX CALLOUT -->
 
-		
-
-		<!-- TEAM -->
-		<section class="module bg-white-dark">
-			<div class="container">
-
-				<div class="row">
+        <!-- STATIC CODE BOX -->
+        <section class="module">
+            <div class="container">
+				<!-- TITLE AND COPY -->
+                <div class="row">
 					<div class="col-sm-6 col-sm-offset-3">
 						<div class="module-header text-center">
-							<h2 class="montserrat text-uppercase">Team</h2>
-							<p class="lead divider-line">Creative people with the amazing skills.</p>
+							<h2 class="montserrat text-uppercase">Get Started</h2>
+							<p class="lead divider-line">Ready to play? Here's what you need to know to get started.</p>
 						</div>
 					</div>
-				</div>
-
-				<div class="row">
-
-					<!-- TEAM MEMBER -->
-					<div class="col-sm-6 col-md-3">
-						<div class="team-item m-b-sm-35">
-							<div class="team-photo">
-								<img src="assets/images/team/team-1.jpg" alt="">
-								<div class="team-social">
-									<div>
-										<div>
-											<a href="#"><i class="fa fa-facebook"></i></a>
-											<a href="#"><i class="fa fa-twitter"></i></a>
-											<a href="#"><i class="fa fa-dribbble"></i></a>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="team-inner">
-								<h6 class="team-name">Michael Thomas</h6>
-								<span class="team-role">Programmer</span>
-							</div>
-						</div>
-					</div>
-					<!-- END TEAM MEMBER -->
-
-					<!-- TEAM MEMBER -->
-					<div class="col-sm-6 col-md-3">
-						<div class="team-item m-b-sm-35">
-							<div class="team-photo">
-								<img src="assets/images/team/team-2.jpg" alt="">
-								<div class="team-social">
-									<div>
-										<div>
-											<a href="#"><i class="fa fa-facebook"></i></a>
-											<a href="#"><i class="fa fa-twitter"></i></a>
-											<a href="#"><i class="fa fa-dribbble"></i></a>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="team-inner">
-								<h6 class="team-name">Adam Hines</h6>
-								<span class="team-role">Creative Director</span>
-							</div>
-						</div>
-					</div>
-					<!-- END TEAM MEMBER -->
-
-					<!-- TEAM MEMBER -->
-					<div class="col-sm-6 col-md-3">
-						<div class="team-item m-b-sm-35">
-							<div class="team-photo">
-								<img src="assets/images/team/team-3.jpg" alt="">
-								<div class="team-social">
-									<div>
-										<div>
-											<a href="#"><i class="fa fa-facebook"></i></a>
-											<a href="#"><i class="fa fa-twitter"></i></a>
-											<a href="#"><i class="fa fa-dribbble"></i></a>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="team-inner">
-								<h6 class="team-name">Laurence Benson</h6>
-								<span class="team-role">Art Director</span>
-							</div>
-						</div>
-					</div>
-					<!-- END TEAM MEMBER -->
-
-					<!-- TEAM MEMBER -->
-					<div class="col-sm-6 col-md-3">
-						<div class="team-item m-b-sm-35">
-							<div class="team-photo">
-								<img src="assets/images/team/team-4.jpg" alt="">
-								<div class="team-social">
-									<div>
-										<div>
-											<a href="#"><i class="fa fa-facebook"></i></a>
-											<a href="#"><i class="fa fa-twitter"></i></a>
-											<a href="#"><i class="fa fa-dribbble"></i></a>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="team-inner">
-								<h6 class="team-name">Robert Fields</h6>
-								<span class="team-role">Account Manager</span>
-							</div>
-						</div>
-					</div>
-					<!-- END TEAM MEMBER -->
-
 				</div><!-- .row -->
 
-			</div>
-		</section>
-		<!-- END TEAM -->
+                <!--whole new row-->
+                <div class="row row-sm-height">
+                    <!-- LEFT SIDE BIG BOX -->
+					<div class="col-sm-6 col-sm-height col-sm-middle">
+                        <div id="editor">
+                <pre class="  language-javascript"><span class="custom-line-numbers">1
+        2
+        3
+        4
+        5
+        6
+        7
+        8
+        9
+        10
+        11
+        12
+        13
+        14
+        15
+        16
+        17
+        18</span>
+        
+        <code class="  language-javascript"><span class="token keyword">const</span> stripe <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'stripe'</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token string">'sk_test_BQokikJOvBiI2HlWgH4olfQ2'</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br /><br /><span class="token comment" spellcheck="true">// Save customer details and payment information.</span>
+<span class="token keyword">const</span> customer <span class="token operator">=</span> <span class="token keyword">await</span> stripe<span class="token punctuation">.</span>customers<span class="token punctuation">.</span><span class="token function">create</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+source<span class="token punctuation">:</span> token<span class="token punctuation">,</span> <span class="token comment" spellcheck="true">// Token retrieved from Stripe.js, Checkout, or native apps.</span>
+email<span class="token punctuation">:</span> <span class="token string">'john@example.com'</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment" spellcheck="true">// Charge or refund customers anytime using their saved payment details.</span>
+<span class="token keyword">let</span> charge <span class="token operator">=</span> <span class="token keyword">await</span> stripe<span class="token punctuation">.</span>charges<span class="token punctuation">.</span><span class="token function">create</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+amount<span class="token punctuation">:</span> <span class="token number">7999</span><span class="token punctuation">,</span>
+currency<span class="token punctuation">:</span> <span class="token string">'eur'</span><span class="token punctuation">,</span>
+customer<span class="token punctuation">:</span> customer<span class="token punctuation">.</span>id
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+charge <span class="token operator">=</span> <span class="token keyword">await</span> stripe<span class="token punctuation">.</span>charges<span class="token punctuation">.</span><span class="token function">refund</span><span class="token punctuation">(</span>charge<span class="token punctuation">.</span>id<span class="token punctuation">,</span> <span class="token punctuation">{</span>
+amount<span class="token punctuation">:</span> <span class="token number">1000</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+                </div> <!-- END EDITOR -->
+
+
+					</div>
+
+					<div class="col-sm-1 col-sm-height col-sm-middle"></div>
+
+					<div class="col-sm-4 col-sm-height col-sm-middle"><!--spacer in middle-->
+
+						<div class="m-t-50 m-b-50">
+							<h3>Discover new brands</h3>
+							<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In dui magna posuere.</p>
+						</div>
+
+
+					</div>
+
+					<div class="col-sm-1 col-sm-height col-sm-middle"></div>
+
+				</div>
+
+                
+            </div><!--end container-->
+        </section>
+        <!-- END STATIC CODE BOX -->
+
+		
 
 		<!-- TESTIMONIALS -->
 		<section class="module bg-brand-alfa-60 parallax color-white" data-background="assets/images/module-8.jpg">
@@ -943,243 +910,6 @@
 		</section>
 		<!-- END TESTIMONIALS -->
 
-		<!-- BLOGS -->
-		<section class="module bg-white-dark">
-			<div class="container">
-
-				<div class="row">
-					<div class="col-sm-6 col-sm-offset-3">
-						<div class="module-header text-center">
-							<h2 class="montserrat text-uppercase">Our news</h2>
-							<p class="lead divider-line">Read fresh news in our blog.</p>
-						</div>
-					</div>
-				</div>
-
-				<div class="row multi-columns-row post-columns">
-
-					<!-- POST IMAGE -->
-					<div class="col-sm-4 col-md-4 col-lg-4">
-						<article class="post format-image bg-white">
-							<div class="post-preview">
-								<a href="#"><img src="assets/images/blog/1.jpg" alt=""></a>
-							</div>
-							<div class="post-content">
-								<h2 class="post-title"><a href="#">The Good Sound</a></h2>
-								<ul class="post-meta">
-									<li>October 24, 2015</li>
-									<li>By <a href="#">Benson</a></li>
-								</ul>
-								<p>Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.</p>
-								<a href="#" class="btn btn-lg btn-link btn-base">Read more ›</a>
-							</div>
-						</article>
-					</div>
-					<!-- END POST IMAGE -->
-
-					<!-- POST SLIDER -->
-					<div class="col-sm-4 col-md-4 col-lg-4">
-						<article class="post format-slider bg-white">
-							<div class="post-preview">
-								<div class="image-slider" data-carousel-options='{"transitionStyle": "fade"}'>
-									<img src="assets/images/blog/2.jpg" alt="">
-									<img src="assets/images/blog/3.jpg" alt="">
-									<img src="assets/images/blog/4.jpg" alt="">
-								</div>
-							</div>
-							<div class="post-content">
-								<h2 class="post-title"><a href="#">The Handkerchief</a></h2>
-								<ul class="post-meta">
-									<li>October 24, 2015</li>
-									<li>By <a href="#">Benson</a></li>
-								</ul>
-								<p>Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.</p>
-								<a href="#" class="btn btn-lg btn-link btn-base">Read more ›</a>
-							</div>
-						</article>
-					</div>
-					<!-- POST SLIDER -->
-
-					<!-- POST VIDEO -->
-					<div class="col-sm-4 col-md-4 col-lg-4">
-						<article class="post format-video bg-white">
-							<div class="post-preview">
-								<iframe src="https://player.vimeo.com/video/144698619?byline=0" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-							</div>
-							<div class="post-content">
-								<h2 class="post-title"><a href="#">Portrait Photoshoots</a></h2>
-								<ul class="post-meta">
-									<li>October 24, 2015</li>
-									<li>By <a href="#">Benson</a></li>
-								</ul>
-								<p>Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.</p>
-								<a href="#" class="btn btn-lg btn-link btn-base">Read more ›</a>
-							</div>
-						</article>
-					</div>
-					<!-- END POST VIDEO -->
-
-				</div><!-- .row -->
-
-				<div class="row">
-					<div class="col-sm-12">
-						<div class="text-center m-t-35">
-							<a href="#" class="btn btn-circle btn-lg btn-fade btn-base">Read all news</a>
-						</div>
-					</div>
-				</div><!-- .row -->
-
-			</div>
-		</section>
-		<!-- END BLOGS -->
-
-		<!-- CLIENTS -->
-		<section class="module-xs">
-			<div class="container">
-
-				<div class="row">
-					<div class="col-sm-12">
-
-						<!-- CLIENTS CAROUSEL -->
-						<div class="clients-carousel">
-							<a href="#"><img src="assets/images/clients/client-1.png" alt=""></a>
-							<a href="#"><img src="assets/images/clients/client-2.png" alt=""></a>
-							<a href="#"><img src="assets/images/clients/client-3.png" alt=""></a>
-							<a href="#"><img src="assets/images/clients/client-4.png" alt=""></a>
-							<a href="#"><img src="assets/images/clients/client-5.png" alt=""></a>
-							<a href="#"><img src="assets/images/clients/client-6.png" alt=""></a>
-							<a href="#"><img src="assets/images/clients/client-1.png" alt=""></a>
-							<a href="#"><img src="assets/images/clients/client-2.png" alt=""></a>
-						</div>
-						<!-- END CLIENTS CAROUSEL -->
-
-					</div>
-				</div><!-- .row -->
-
-			</div>
-		</section>
-		<!-- END CLIENTS -->
-
-
-		<!-- SERVICES -->
-		<section class="module-sm">
-			<div class="container">
-
-				<div class="row multi-columns-row">
-
-					<!-- ICONBOX -->
-					<div class="col-sm-4 col-md-4 col-lg-4">
-						<div class="box-icon-left">
-							<div class="icon-box-icon">
-								<i class="icon-map icons"></i>
-							</div>
-							<h4>Mega Menu</h4>
-							<p>In dui magna, posuere eget, vestibulum et, tempor auctor, justo. In ac felis quis tortor malesuada pretium.</p>
-						</div>
-					</div>
-					<!-- END ICONBOX -->
-
-					<!-- ICONBOX -->
-					<div class="col-sm-4 col-md-4 col-lg-4">
-						<div class="box-icon-left">
-							<div class="icon-box-icon">
-								<i class="icon-rocket icons"></i>
-							</div>
-							<h4>Responsive Design</h4>
-							<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In dui magna posuere.</p>
-						</div>
-					</div>
-					<!-- END ICONBOX -->
-
-					<!-- ICONBOX -->
-					<div class="col-sm-4 col-md-4 col-lg-4">
-						<div class="box-icon-left">
-							<div class="icon-box-icon">
-								<i class="icon-layers icons"></i>
-							</div>
-							<h4>Reusable Elements</h4>
-							<p>In dui magna, posuere eget, vestibulum et, tempor auctor, justo. In ac felis quis tortor malesuada pretium.</p>
-						</div>
-					</div>
-					<!-- END ICONBOX -->
-
-					<!-- ICONBOX -->
-					<div class="col-sm-4 col-md-4 col-lg-4">
-						<div class="box-icon-left">
-							<div class="icon-box-icon">
-								<i class="icon-star icons"></i>
-							</div>
-							<h4>Awesome Parallax</h4>
-							<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In dui magna posuere.</p>
-						</div>
-					</div>
-					<!-- END ICONBOX -->
-
-					<!-- ICONBOX -->
-					<div class="col-sm-4 col-md-4 col-lg-4">
-						<div class="box-icon-left">
-							<div class="icon-box-icon">
-								<i class="icon-cloud-download icons"></i>
-							</div>
-							<h4>Google Web Fonts</h4>
-							<p>In dui magna, posuere eget, vestibulum et, tempor auctor, justo. In ac felis quis tortor malesuada pretium.</p>
-						</div>
-					</div>
-					<!-- END ICONBOX -->
-
-					<!-- ICONBOX -->
-					<div class="col-sm-4 col-md-4 col-lg-4">
-						<div class="box-icon-left">
-							<div class="icon-box-icon">
-								<i class="icon-game-controller icons"></i>
-							</div>
-							<h4>Multiple Colour Schemes</h4>
-							<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In dui magna posuere.</p>
-						</div>
-					</div>
-					<!-- END ICONBOX -->
-
-					<!-- ICONBOX -->
-					<div class="col-sm-4 col-md-4 col-lg-4">
-						<div class="box-icon-left">
-							<div class="icon-box-icon">
-								<i class="icon-paper-clip icons"></i>
-							</div>
-							<h4>100+ HTML Pages</h4>
-							<p>In dui magna, posuere eget, vestibulum et, tempor auctor, justo. In ac felis quis tortor malesuada pretium.</p>
-						</div>
-					</div>
-					<!-- END ICONBOX -->
-
-					<!-- ICONBOX -->
-					<div class="col-sm-4 col-md-4 col-lg-4">
-						<div class="box-icon-left">
-							<div class="icon-box-icon">
-								<i class="icon-control-play icons"></i>
-							</div>
-							<h4>Video Backgrounds</h4>
-							<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In dui magna posuere.</p>
-						</div>
-					</div>
-					<!-- END ICONBOX -->
-
-					<!-- ICONBOX -->
-					<div class="col-sm-4 col-md-4 col-lg-4">
-						<div class="box-icon-left">
-							<div class="icon-box-icon">
-								<i class="icon-present icons"></i>
-							</div>
-							<h4>650+ Web Icons</h4>
-							<p>In dui magna, posuere eget, vestibulum et, tempor auctor, justo. In ac felis quis tortor malesuada pretium.</p>
-						</div>
-					</div>
-					<!-- END ICONBOX -->
-
-				</div><!-- .row -->
-
-			</div>
-		</section>
-		<!-- END SERVICES -->
 
 		<!-- FOOTER -->
 		<footer id="footer" class="footer-minimal">
@@ -1221,6 +951,10 @@
 	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
 	<script src="assets/js/plugins.min.js"></script>
 	<script src="assets/js/custom.min.js"></script>
+
+    <!--for animated terminal window (also requires jQ 2.1.3+) -->
+    <script src="assets/js/typed.custom.js"></script>    
+    <script src="assets/js/terminalcodedemo.js"></script>
 
 </body>
 </html>
