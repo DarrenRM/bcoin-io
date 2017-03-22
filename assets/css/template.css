@@ -17,6 +17,23 @@ New Color: #385dc1 and 56, 93, 193
 */
 
 
+/*COLOR CHANGES
+Dark Blue BG for Parallax Docs Callout*/
+.bg-darkblue-alfa-80:before {
+    background: rgba(8, 29, 88, 0.8);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    content: "";
+    left: 0;
+    top: 0;
+}
+
+/*White Text Override */
+.force-text-white{
+    color:#fff;
+}
 
 
 /* Hero paragraph */
