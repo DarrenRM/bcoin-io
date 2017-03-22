@@ -7,10 +7,25 @@ Project:     bcoin.io (template Neomax)
 [Custom Styles]
 */
 
-/* STATIC Terminal Window */
-* {
-    box-sizing: border-box
+/*GitHub Buttons Fix */
+.ghbuttons{
+position: relative;
+    display: block;
+    line-height: 20px;
+    font-size: 18px;
+    color: #333333;
+    color: #999;
+    padding: 30px 15px;
 }
+
+.ghbuttons > iframe {
+    margin-left:15px;
+}
+
+/* STATIC Terminal Window */
+/** {
+    box-sizing: border-box
+}*/
 
 #editor {
     margin: 20px 0;
