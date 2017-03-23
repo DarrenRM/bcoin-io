@@ -19,8 +19,8 @@ New Color: #385dc1 and 56, 93, 193
 
 /*COLOR CHANGES
 Dark Blue BG for Parallax Docs Callout*/
-.bg-darkblue-alfa-80:before {
-    background: rgba(8, 29, 88, 0.8);
+.bg-darkblue-alfa-50:before {
+    background: rgba(8, 29, 88, 0.5);
     position: absolute;
     height: 100%;
     width: 100%;
@@ -250,6 +250,17 @@ pre.language-bash .line-numbers>span:first-child:before,pre.language-curl .line-
 
 
 /* ANIMATED Terminal Window */
+.terminal-subtext{
+    padding-left: 15px !important;
+    padding-top:5px !important;
+    color:#54585a;
+}
+
+.terminal-subtext > h5 > a{
+    color:teal;
+}
+
+
 body {
   background: #6D7074;
 }
