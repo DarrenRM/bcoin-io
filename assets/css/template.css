@@ -330,7 +330,8 @@ body {
 .terminal-data { display: none; }
 .terminal-window .gray { color: gray; }
 .terminal-window .green { color: green;}
-
+.terminal-window .teal {color: #3dc1d4;}
+.terminal-window .purple {color: #9072e6;}
 
 /*
 [General Styles]
@@ -1206,6 +1207,12 @@ table th {
 }
 
 /* --- [Button Colors] --- */
+.btn.btn-purple {
+    background-color: #654fb7;
+    border-color: #654fb7;
+    color: #fff;
+}
+
 
 .btn.btn-base {
     background-color: #385dc1;

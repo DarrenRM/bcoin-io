@@ -3,7 +3,7 @@ $(function() {
   { 
     action: 'type',
     strings: ["npm install -g bcoin --production"],
-    output: '<span class="gray">bcoin@v1.0.0-beta.10 installed</span><br>&nbsp;',
+    output: '<span class="teal">bcoin@v1.0.0-beta.10 installed</span><br>&nbsp;',
     postDelay: 1000
   },
   { 
@@ -16,18 +16,18 @@ $(function() {
     action: 'type',
     //clear: true,
     strings: ['make'],
-    output: '<span class="gray"># bcoin browserified</span><br>&nbsp;',
+    output: '<span class="teal"># bcoin browserified</span><br>&nbsp;',
     postDelay: 1000
   },
   { 
     action: 'type',
     strings: ['node browser/server.js 8080'],
-    output: '<span class="gray"># simple webserver and websocket->tcp bridge started</span><br>&nbsp;',     
+    output: '<span class="teal"># simple webserver and websocket->tcp bridge started</span><br>&nbsp;',     
     postDelay: 2000
   },  
   { 
     action: 'type',
-    strings: ["was i just a menace to the network?", ''],
+    strings: ["am i a menace to the network?", ''],
     postDelay: 2000
   }
   
