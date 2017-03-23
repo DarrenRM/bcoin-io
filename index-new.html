@@ -128,7 +128,7 @@
 						<!-- GITHUB STUFF -->
 						<div class="menu-item">
 							<div class="">
-								<a href="https://purse.io" id="" data-toggle="tooltip" title="" data-original-title="Visit Purse.io and see bcoin in action!">
+								<a href="https://purse.io" id="" data-toggle="tooltip" title="" data-placement="bottom" data-original-title="Visit Purse.io and see bcoin in action!">
 									<img src="assets/images/purse_icon.png" />
 
 
@@ -435,44 +435,58 @@
                 <div class="row row-sm-height">
                     <!-- LEFT SIDE BIG BOX -->
 					<div class="col-sm-6 col-sm-height col-sm-middle">
-                        <div id="editor">
-                <pre class="  language-javascript"><span class="custom-line-numbers">1
-        2
-        3
-        4
-        5
-        6
-        7
-        8
-        9
-        10
-        11
-        12
-        13
-        14
-        15
-        16
-        17
-        18</span>
-        
-        <code class="  language-javascript"><span class="token keyword">const</span> stripe <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'stripe'</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token string">'sk_test_BQokikJOvBiI2HlWgH4olfQ2'</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br /><br /><span class="token comment" spellcheck="true">// Save customer details and payment information.</span>
-<span class="token keyword">const</span> customer <span class="token operator">=</span> <span class="token keyword">await</span> stripe<span class="token punctuation">.</span>customers<span class="token punctuation">.</span><span class="token function">create</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
-source<span class="token punctuation">:</span> token<span class="token punctuation">,</span> <span class="token comment" spellcheck="true">// Token retrieved from Stripe.js, Checkout, or native apps.</span>
-email<span class="token punctuation">:</span> <span class="token string">'john@example.com'</span>
-<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                        <!--removed old editor here -->
+<div class="page-terminal">
+<div>
+<pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20</pre>
+</div>
+<div>
+<pre class="select-auto">
+<span>var</span> bcoin = require('bcoin').set('testnet');
+<span class="code-gray">// SPV chains only store the chain headers.</span>
+<span>var</span> chain = <span>new</span> bcoin.chain({
+  db: <span class="code-blue">'leveldb'</span>,
+  location: process.env.HOME + <span class="code-blue">'/spvchain'</span>,
+  spv: <span class="code-teal">true</span>
+});
 
-<span class="token comment" spellcheck="true">// Charge or refund customers anytime using their saved payment details.</span>
-<span class="token keyword">let</span> charge <span class="token operator">=</span> <span class="token keyword">await</span> stripe<span class="token punctuation">.</span>charges<span class="token punctuation">.</span><span class="token function">create</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
-amount<span class="token punctuation">:</span> <span class="token number">7999</span><span class="token punctuation">,</span>
-currency<span class="token punctuation">:</span> <span class="token string">'eur'</span><span class="token punctuation">,</span>
-customer<span class="token punctuation">:</span> customer<span class="token punctuation">.</span>id
-<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span>var</span> pool = new bcoin.pool({
+  chain: chain,
+  spv: <span class="code-teal">true</span>,
+  maxPeers: <span class="code-teal">8</span>
+});
+<!--
+<span>import</span> flask
+<span>from</span> two1.wallet <span>import</span> Wallet
+<span>from</span> two1.bitserv.flask <span>import</span> Payment
+app = flask.Flask(__name__)
+payment = Payment(app, Wallet())
+@app.route('/hello')
+<span>@payment.required(5000)</span>
+def hello():
+    return 'Hello, Bitcoin!'</pre>-->
 
-charge <span class="token operator">=</span> <span class="token keyword">await</span> stripe<span class="token punctuation">.</span>charges<span class="token punctuation">.</span><span class="token function">refund</span><span class="token punctuation">(</span>charge<span class="token punctuation">.</span>id<span class="token punctuation">,</span> <span class="token punctuation">{</span>
-amount<span class="token punctuation">:</span> <span class="token number">1000</span>
-<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
-                </div> <!-- END EDITOR -->
-
+</div>
+</div>
 
 					</div>
 
