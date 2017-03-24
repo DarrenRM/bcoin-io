@@ -3,28 +3,28 @@ $(function() {
   { 
     action: 'type',
     strings: ["npm install bcoin"],
-    output: '<span class="teal">bcoin@v1.0.0-beta.10 installed</span><br>&nbsp;',
+    output: '<span class="teal">installing bcoin-native@0.0.14...</span><br><span class="teal">bcoin successfully installed</span>&nbsp;',
     postDelay: 1000
   },
-  { 
+  /*{ 
     action: 'type',
-    strings: ["bcoin --prune"],
-    output: '$ bcoin',
+    strings: [""],
+    output: '<span class="teal">bcoin successfully installed</span><br>&nbsp;',
     postDelay: 1000
-  },
+  },*/
   { 
     action: 'type',
     //clear: true,
-    strings: ['make'],
-    output: '<span class="teal"># bcoin browserified</span><br>&nbsp;',
+    strings: ["bcoin --prune"],
+    output: '<span class="teal">pruned!</span><br>&nbsp;',
     postDelay: 1000
   },
-  { 
+  /*{ 
     action: 'type',
     strings: ['node browser/server.js 8080'],
     output: '<span class="teal"># simple webserver and websocket->tcp bridge started</span><br>&nbsp;',     
     postDelay: 2000
-  },  
+  },*/  
   { 
     action: 'type',
     strings: ["am i a menace to the network?", ''],
