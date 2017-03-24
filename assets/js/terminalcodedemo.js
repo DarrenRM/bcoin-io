@@ -3,7 +3,7 @@ $(function() {
   { 
     action: 'type',
     strings: ["npm install bcoin"],
-    output: '<span class="teal">bcoin-native@0.0.14 install Users/Satoshi/node_modules/bcoin-native</span><br><span class="teal">node-gyp rebuild</span>&nbsp;',
+    output: '<span class="blue">bcoin-native@0.0.14 install Users/Satoshi/node_modules/bcoin-native</span><br><span class="blue">node-gyp rebuild</span>&nbsp;',
     postDelay: 1000
   },
   /*{ 
@@ -16,7 +16,7 @@ $(function() {
     action: 'type',
     //clear: true,
     strings: ["bcoin --prune"],
-    output: '<span class="teal">[info] Chain is loading.<br>[info] Opening ChainDB...<br>[info] ChainDB successfully loaded.<br>[info] Scanning block 00000000839a8e6886ab5951d76f4114320161bbf18eb6048 (1).</span><br>&nbsp;',
+    output: '<span class="blue">[info] Chain is loading.<br>[info] Opening ChainDB...<br>[info] ChainDB successfully loaded.<br>[info] Scanning block 00000000839a8e6886ab5951d76f4114320161bbf18eb6048 (1).</blue><br>&nbsp;',
     postDelay: 1000
   },
   /*{ 
@@ -27,7 +27,7 @@ $(function() {
   },*/  
   { 
     action: 'type',
-    strings: ["am i a menace to the network?", ''],
+    strings: ['am i a menace to the network?',''],
     postDelay: 2000
   }
   

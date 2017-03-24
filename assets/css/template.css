@@ -35,6 +35,11 @@ Dark Blue BG for Parallax Docs Callout*/
     color:#fff;
 }
 
+/*Custom Margin Classes*/
+.m-l-70 {
+    margin-left:70px;
+}
+
 
 /* Hero paragraph */
 .hero-para{
@@ -47,7 +52,7 @@ Fixes a small gap where different screen sizes might look funny. Maybe.
 */
 @media (max-width:990px) and (min-width: 768px){
     .ideatime {
-        margin-left:-100px !important;
+        margin-left:0px !important;
     }
 }
 
@@ -168,7 +173,8 @@ body {
 
 .terminal-window {
   text-align: left;
-  width: 500px;
+  /*width: 500px;*/
+  width:100%;
   height: 360px;
   border-radius: 10px;
   margin: auto;
@@ -206,7 +212,7 @@ body {
 .terminal-window section.terminal {
   color: white;
   font-family: Menlo, Monaco, "Consolas", "Courier New", "Courier";
-  font-size: 11pt;
+  font-size: 10pt;
   background: #30353A;
   padding: 10px;
   box-sizing: border-box;
@@ -244,6 +250,7 @@ body {
 .terminal-window .green { color: green;}
 .terminal-window .teal {color: #3dc1d4;}
 .terminal-window .purple {color: #9072e6;}
+.terminal-window .blue {color:#72aed6;}
 
 /*
 [General Styles]
@@ -1123,6 +1130,7 @@ table th {
     background-color: #654fb7;
     border-color: #654fb7;
     color: #fff;
+    margin-left:15px;
 }
 
 
@@ -2396,7 +2404,7 @@ body.off-canvas-cart-open:after {
 }
 
 .slider-testimonial .owl-page span {
-    background: #fff;
+    background: #000;
     box-shadow: 0px 0px 0px 3px transparent;
     border-radius: 50%;
     display: block;
@@ -2412,7 +2420,7 @@ body.off-canvas-cart-open:after {
 
 .slider-testimonial .owl-page.active span {
     background: transparent;
-    box-shadow: 0px 0px 0px 3px white;
+    box-shadow: 0px 0px 0px 3px black;
     -webkit-transform: scale(0.9);
             transform: scale(0.9);
     opacity: 1;
@@ -3757,10 +3765,11 @@ body.off-canvas-cart-open:after {
     height: 100vh;
 }
 
+/*not sure why this was set so damn high at 240 padding. lowering it a bit */
 @media (max-width: 991px) {
     .module-hero {
         height: auto;
-        padding: 240px 0;
+        padding: 100px 0;
     }
 }
 
