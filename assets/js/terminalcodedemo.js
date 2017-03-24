@@ -2,13 +2,13 @@ $(function() {
   var data = [
   { 
     action: 'type',
-    strings: ["npm install -g bcoin --production"],
+    strings: ["npm install bcoin"],
     output: '<span class="teal">bcoin@v1.0.0-beta.10 installed</span><br>&nbsp;',
     postDelay: 1000
   },
   { 
     action: 'type',
-    strings: ["cd ~/bcoin"],
+    strings: ["bcoin --prune"],
     output: '$ bcoin',
     postDelay: 1000
   },

@@ -42,6 +42,15 @@ Dark Blue BG for Parallax Docs Callout*/
 
 }
 
+/*IDEA
+Fixes a small gap where different screen sizes might look funny. Maybe.
+*/
+@media (max-width:990px) and (min-width: 768px){
+    .ideatime {
+        margin-left:-100px !important;
+    }
+}
+
 
 
 /*GitHub Buttons Fix */
@@ -143,11 +152,12 @@ position: relative;
 .terminal-subtext{
     padding-left: 15px !important;
     padding-top:5px !important;
-    color:#fff;
+    color:#54585a;
+    display: block;
 }
 
 .terminal-subtext > h5 > a{
-    color:teal;
+    color:#000;
 }
 
 
@@ -158,11 +168,12 @@ body {
 
 .terminal-window {
   text-align: left;
-  width: 600px;
+  width: 500px;
   height: 360px;
   border-radius: 10px;
   margin: auto;
   position: relative;
+
 }
 
 .terminal-window header {
