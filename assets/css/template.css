@@ -44,8 +44,13 @@ Dark Blue BG for Parallax Docs Callout*/
 /* Hero paragraph */
 .hero-para{
     line-height: 1.8;
-
 }
+
+/* Button spacing for 2+ buttons */
+.button-gap {
+    margin-left:15px;
+}
+
 
 /*IDEA
 Fixes a small gap where different screen sizes might look funny. Maybe.
@@ -250,7 +255,7 @@ body {
 .terminal-window .green { color: green;}
 .terminal-window .teal {color: #3dc1d4;}
 .terminal-window .purple {color: #9072e6;}
-.terminal-window .blue {color:#72aed6;}
+.terminal-window .blue {color:#90d3ff;}
 
 /*
 [General Styles]
@@ -1130,7 +1135,6 @@ table th {
     background-color: #654fb7;
     border-color: #654fb7;
     color: #fff;
-    margin-left:15px;
 }
 
 
