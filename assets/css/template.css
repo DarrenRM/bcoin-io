@@ -61,7 +61,13 @@ Fixes a small gap where different screen sizes might look funny. Maybe.
     }
 }
 
+/* Justify */
 
+.justice{
+    text-align: justify;
+    -moz-text-align-last: justify;
+    text-align-last: justify;
+}
 
 /*GitHub Buttons Fix */
 .ghbuttons{
@@ -467,6 +473,12 @@ h6.text-uppercase,
     line-height: 1.8;
     font-weight: 400;
     font-size: 16px;
+}
+
+.lead-more {
+    line-height: 2;
+    font-weight: 600;
+    font-size: 15px;
 }
 
 .divider-line:after {
@@ -1136,6 +1148,14 @@ table th {
     border-color: #654fb7;
     color: #fff;
 }
+
+.btn.btn-purple:hover {
+    background-color: #5039a2;
+    border-color: #5039a2;
+    color: #fff;
+}
+
+
 
 
 .btn.btn-base {
