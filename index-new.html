@@ -87,7 +87,7 @@
 								</div><!-- end of terminal window-->
 								
 								<div class="row terminal-subtext text-center">
-									<h5>Supported by and used in production for <a href="https://purse.io" target="_blank">Purse.io</a></h5>
+									<h6>Supported and used in production by <a href="https://purse.io" target="_blank">Purse.io</a></h6>
 								</div>
 
                                 
@@ -319,7 +319,7 @@
 				<img src="assets/images/iphone.jpg" alt="">
 			</div>-->
 			<div class="col-md-6 col-md-push-6 col-sm-4 col-sm-push-8 p-0 m-b-50">
-				<img src="assets/images/pixel-phone-silver.png" alt="">
+				<img src="assets/images/pixel-phone-graphicGIF.gif" alt="">
 			</div>
 			<div class="container">
 				<div class="col-md-6 col-md-pull-0 col-sm-6 col-sm-pull-4">
@@ -356,7 +356,7 @@
 				<div class="col-md-6 col-md-offset-2 col-sm-7 col-sm-offset-1 pull-image-right">
 					<!--note: remove m-t-100 from class below -->
 					<h1 class="text-300">Secure, <br> Written from Scratch</h1>
-					<p>Developing applications that natively utilize bitcoin’s powerful financial network can be difficult, even for season developers. Bcoin abstracts out the most difficult components of bitcoin development — allowing you to focus on creating great functionality, with hardened security at its core.</p>
+					<p>Developing applications that natively utilize bitcoin’s powerful financial network can be difficult, even for seasoned developers. Bcoin abstracts out the most difficult components of bitcoin development — allowing you to focus on creating great functionality, with hardened security at its core.</p>
 
 					<div class="box-icon-left">
 						<div class="icon-box-icon"><i class="icon-bubbles icons"></i></div>
@@ -444,10 +444,10 @@
                 <div class="row row-sm-height">
                     <!-- LEFT SIDE BIG BOX -->
 					<div class="col-sm-6 col-sm-height col-sm-middle">
-                        <h3>Title of Example Code</h3>
+                        <h3>Setup your Bcoin Node</h3>
 <div class="page-terminal">
 <div>
-<pre>1
+<pre class="code-dkgray">1
 2
 3
 4
@@ -466,23 +466,40 @@
 17
 18
 19
-20</pre>
+20
+21
+22
+23
+24
+25
+
+</pre>
 </div>
 <div>
-<pre class="select-auto">
-<span>var</span> bcoin = require('bcoin').set('testnet');
-<span class="code-gray">// SPV chains only store the chain headers.</span>
-<span>var</span> chain = <span>new</span> bcoin.chain({
-  db: <span class="code-blue">'leveldb'</span>,
-  location: process.env.HOME + <span class="code-blue">'/spvchain'</span>,
-  spv: <span class="code-teal">true</span>
+<pre class="select-auto hide-this">
+'use strict';
+
+<span>var</span> <span class="code-blue">bcoin</span> = require('bcoin');
+
+<span>var</span> <span class="code-blue">node</span> = <span>new</span> <span class="code-teal">bcoin</span>.<span class="code-teal">fullnode</span>({
+  <span class="code-blue">network:</span> 'testnet',
+  <span class="code-blue">db:</span> 'memory'
 });
 
-<span>var</span> pool = new bcoin.pool({
-  chain: chain,
-  spv: <span class="code-teal">true</span>,
-  maxPeers: <span class="code-teal">8</span>
-});
+(<span>async function</span>() {
+  <span class="code-red">await</span> <span class="code-blue">node</span>.open();
+  <span class="code-red">await</span> <span class="code-blue">node</span>.connect();
+
+  <span class="code-blue">node</span>.on('connect', <span>function</span>(<span class="code-blue">entry</span>, <span class="code-blue">block</span>) {
+    <span class="code-teal">console</span>.log('%s (%d) added to chain.', <span class="code-blue">entry</span>.rhash(), <span class="code-blue">entry</span>.<span class="code-blue">height</span>);
+  });
+
+  <span class="code-blue">node</span>.on('<span class="code-blue">tx</span>', <span>function</span>(tx) {
+    <span class="code-teal">console</span>.log('%s added to mempool.', <span class="code-blue">tx</span>.txid());
+  });
+
+  <span class="code-blue">node</span>.startSync();
+})();
 
 </div>
 </div>
@@ -496,19 +513,10 @@
 					<div class="col-sm-4 col-sm-height col-sm-middle"><!--spacer in middle-->
 
 						<div class="m-t-50 m-b-50">
-							<h3>1. Copy this</h3>
-							<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In dui magna posuere.</p>
+							<p>Once you have bcoin installed, setting up a node on the bitcoin test network is simple. <br><br>	 Having a node set-up will allow you to more easily test and query the RPC/REST API, and begin monitoring new transactions added to the bitcoin blockchain/mempool.</p>
 						</div>
 
-                        <div class="m-t-50 m-b-50">
-							<h3>2. Paste this</h3>
-							<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In dui magna posuere.</p>
-						</div>
 
-                        <div class="m-t-50 m-b-50">
-							<h3>3. Run your code</h3>
-							<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In dui magna posuere.</p>
-						</div>
 
 
 					</div>

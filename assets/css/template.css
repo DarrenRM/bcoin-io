@@ -84,13 +84,26 @@ position: relative;
     margin-left:15px;
 }
 
+
+
+
+
+
 /* STATIC Terminal Window */
+
+.hide-this {
+    overflow: hidden !important;
+}
 
 .page-terminal {
     background: #d7e9f7;
     display: table;
     width: 100%;
     table-layout: fixed
+}
+
+.page-terminal:hover {
+    width: 200%;
 }
 
 .page-terminal>* {
@@ -114,7 +127,7 @@ position: relative;
     font-weight: 400;
     overflow: hidden;
     background: transparent;
-    height: 350px;
+    height: 450px;
     padding: 0;
     margin: 0;
     font-size: 13px;
@@ -131,7 +144,7 @@ position: relative;
 }
 
 .code-red {
-    color:red !important;
+    color:#c35252 !important;
 }
 
 .code-gray {
@@ -145,9 +158,18 @@ position: relative;
 .code-teal {
     color:#05b1a2 !important;
 }
-
-
-
+.code-yellow {
+    color:#95967a !important;
+}
+.code-orange {
+    color:#e8a60c !important;
+}
+.code-white {
+    color:#fff !important;
+}
+.code-dkgray {
+    color:#333 !important;
+}
 .page-terminal-comment {
     margin: 20px 0;
     text-transform: uppercase;
@@ -172,8 +194,8 @@ position: relative;
     display: block;
 }
 
-.terminal-subtext > h5 > a{
-    color:#654fb7;
+.terminal-subtext > h6 > a{
+    color:#fff;
 }
 
 
