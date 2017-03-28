@@ -49,7 +49,7 @@ Dark Blue BG for Parallax Docs Callout*/
 /* Clients fix for larger screens*/
 @media screen and (min-width: 991px) {
     .large-fix {
-       margin-left: 20% !important;
+       margin-left: 25% !important;
     }
 }
 
